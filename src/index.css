@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Beige Creme color palette - #E8DCC2 based */
+    --background: 40 45% 83%;
+    --foreground: 40 5% 28%;
+
+    --card: 40 45% 88%;
+    --card-foreground: 40 5% 28%;
+
+    --popover: 40 45% 88%;
+    --popover-foreground: 40 5% 28%;
+
+    /* Primary - Textured Charcoal #4A4743 */
+    --primary: 40 5% 28%;
+    --primary-foreground: 40 45% 92%;
+
+    /* Secondary - Warm Sandstone #D2B48C */
+    --secondary: 34 44% 69%;
+    --secondary-foreground: 40 5% 28%;
+
+    /* Accent - Rust Gold #C9A36A */
+    --accent: 37 49% 60%;
+    --accent-foreground: 40 5% 20%;
+
+    /* Antique Taupe #B8A48A */
+    --taupe: 32 26% 63%;
+    --taupe-foreground: 40 5% 28%;
+
+    /* Charcoal for text */
+    --charcoal: 40 5% 28%;
+    --charcoal-foreground: 40 45% 92%;
+
+    --muted: 34 30% 75%;
+    --muted-foreground: 40 5% 35%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 45% 95%;
+
+    --border: 34 30% 70%;
+    --input: 34 30% 70%;
+    --ring: 37 49% 60%;
+
+    --radius: 0.5rem;
+
+    /* Custom gradients */
+    --gradient-charcoal: linear-gradient(135deg, hsl(40 5% 28%) 0%, hsl(40 5% 35%) 100%);
+    --gradient-sandstone: linear-gradient(135deg, hsl(34 44% 69%) 0%, hsl(32 26% 63%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(37 49% 65%) 0%, hsl(37 49% 55%) 100%);
+
+    /* Shadows */
+    --shadow-engraved: inset 2px 2px 4px rgba(74, 71, 67, 0.15), inset -1px -1px 2px rgba(232, 220, 194, 0.5);
+    --shadow-raised: 4px 4px 16px rgba(74, 71, 67, 0.1), -2px -2px 8px rgba(232, 220, 194, 0.95);
+    --shadow-hover: 8px 8px 24px rgba(74, 71, 67, 0.15), -4px -4px 12px rgba(232, 220, 194, 0.98);
+
+    --sidebar-background: 40 45% 88%;
+    --sidebar-foreground: 40 5% 28%;
+    --sidebar-primary: 40 5% 28%;
+    --sidebar-primary-foreground: 40 45% 92%;
+    --sidebar-accent: 34 44% 69%;
+    --sidebar-accent-foreground: 40 5% 28%;
+    --sidebar-border: 34 30% 75%;
+    --sidebar-ring: 37 49% 60%;
+  }
+
+  .dark {
+    --background: 40 5% 12%;
+    --foreground: 40 45% 88%;
+
+    --card: 40 5% 16%;
+    --card-foreground: 40 45% 88%;
+
+    --popover: 40 5% 16%;
+    --popover-foreground: 40 45% 88%;
+
+    --primary: 40 45% 88%;
+    --primary-foreground: 40 5% 18%;
+
+    --secondary: 34 30% 30%;
+    --secondary-foreground: 40 45% 88%;
+
+    --accent: 37 49% 55%;
+    --accent-foreground: 40 5% 12%;
+
+    --muted: 40 5% 20%;
+    --muted-foreground: 34 20% 55%;
+
+    --border: 40 5% 25%;
+    --input: 40 5% 25%;
+    --ring: 37 49% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground font-body;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+
+  /* Engraved text effect */
+  .text-engraved {
+    text-shadow:
+      1px 1px 1px rgba(255, 255, 255, 0.3),
+      -1px -1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-embossed {
+    text-shadow:
+      2px 2px 3px rgba(0, 0, 0, 0.4),
+      -1px -1px 1px rgba(255, 255, 255, 0.2);
+  }
+
+  /* Concrete texture overlay */
+  .texture-concrete {
+    position: relative;
+  }
+
+  .texture-concrete::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Stamped pattern background */
+  .pattern-stamped {
+    background-image:
+      repeating-linear-gradient(45deg,
+        transparent,
+        transparent 10px,
+        rgba(0, 0, 0, 0.02) 10px,
+        rgba(0, 0, 0, 0.02) 20px);
+  }
+
+  /* Card with concrete effect */
+  .card-concrete {
+    @apply bg-card rounded-lg;
+    box-shadow: var(--shadow-raised);
+    transition: all 0.3s ease;
+  }
+
+  .card-concrete:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  /* Engraved divider */
+  .divider-engraved {
+    height: 2px;
+    background: linear-gradient(to right,
+        transparent,
+        hsl(var(--border)),
+        transparent);
+    box-shadow: var(--shadow-engraved);
+  }
+
+  /* Button with concrete feel */
+  .btn-concrete {
+    @apply relative overflow-hidden;
+    background: var(--gradient-concrete);
+    box-shadow: var(--shadow-raised);
+    transition: all 0.3s ease;
+  }
+
+  .btn-concrete:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  .btn-gold {
+    background: var(--gradient-gold);
+    box-shadow: var(--shadow-raised);
+    transition: all 0.3s ease;
+  }
+
+  .btn-gold:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  /* Scroll animations */
+  @keyframes scrollFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scrollFadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scrollFadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scrollScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .scroll-fade-in {
+    opacity: 0;
+  }
+
+  .scroll-fade-in.visible {
+    animation: scrollFadeIn 0.7s ease-out forwards;
+  }
+
+  .scroll-fade-left {
+    opacity: 0;
+  }
+
+  .scroll-fade-left.visible {
+    animation: scrollFadeInLeft 0.7s ease-out forwards;
+  }
+
+  .scroll-fade-right {
+    opacity: 0;
+  }
+
+  .scroll-fade-right.visible {
+    animation: scrollFadeInRight 0.7s ease-out forwards;
+  }
+
+  .scroll-scale {
+    opacity: 0;
+  }
+
+  .scroll-scale.visible {
+    animation: scrollScale 0.6s ease-out forwards;
+  }
+
+  /* Staggered children animation */
+  .stagger-children.visible>* {
+    animation: scrollFadeIn 0.5s ease-out forwards;
+  }
+
+  .stagger-children.visible>*:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .stagger-children.visible>*:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .stagger-children.visible>*:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .stagger-children.visible>*:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .stagger-children.visible>*:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .stagger-children.visible>*:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  /* Floating animation */
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Slide in animations */
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slideInUp 0.6s ease-out forwards;
+  }
+
+  /* Stamp effect on hover */
+  .stamp-hover {
+    transition: all 0.3s ease;
+  }
+
+  .stamp-hover:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.15),
+      0 0 0 2px hsl(var(--accent) / 0.3);
+  }
+
+  /* Scroll smooth */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  .font-body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
