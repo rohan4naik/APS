@@ -93,7 +93,7 @@ export function HeroSection() {
           loop
           playsInline
           className="absolute min-w-full min-h-full object-cover"
-          poster="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          poster="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=60&fm=webp"
         >
           <source
             src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761"
