@@ -47,7 +47,7 @@ const Product = () => {
                         <div className="mt-auto">
                           <a
                             href={`https://wa.me/917020999425?text=${encodeURIComponent(
-                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: ${window.location.origin}${product.image}`
+                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: https://rohan4naik.github.io${product.image}`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -102,7 +102,7 @@ const Product = () => {
                         <div className="mt-auto">
                           <a
                             href={`https://wa.me/917020999425?text=${encodeURIComponent(
-                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: ${window.location.origin}${product.image}`
+                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: https://rohan4naik.github.io${product.image}`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -166,7 +166,7 @@ const Product = () => {
                       <div className="p-6 flex flex-col items-center justify-center bg-card">
                         <a
                           href={`https://wa.me/917020999425?text=${encodeURIComponent(
-                            `Hello, I would like to enquire about this stamp concrete mould.\n\nImage: ${window.location.origin}${image}`
+                            `Hello, I would like to enquire about this stamp concrete mould.\n\nImage: https://rohan4naik.github.io${image}`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
