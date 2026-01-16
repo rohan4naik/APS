@@ -12,12 +12,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 
 // Import design images
-import square1x1Image from "@/assets/designs/square-1x1.png";
-import square4x4Image from "@/assets/designs/square-4x4.png";
-import textureImage from "@/assets/designs/texture.png";
-import treeGratingImage from "@/assets/designs/tree-grating.png";
-import verticalImage from "@/assets/designs/vertical.png";
-import woodenImage from "@/assets/designs/wooden.png";
+import square1x1Image from "@/assets/designs/square-1x1.webp";
+import square4x4Image from "@/assets/designs/square-4x4.webp";
+import textureImage from "@/assets/designs/texture.webp";
+import treeGratingImage from "@/assets/designs/tree-grating.webp";
+import verticalImage from "@/assets/designs/vertical.webp";
+import woodenImage from "@/assets/designs/wooden.webp";
 import ashlarEnglishImage from "@/assets/designs/ashlar-english.jpg";
 import bigRandomStoneImage from "@/assets/designs/big-random-stone.jpg";
 import borderImage from "@/assets/designs/border.jpg";
@@ -26,14 +26,14 @@ import footpathImage from "@/assets/designs/footpath.jpg";
 import gameStampImage from "@/assets/designs/game-stamp.jpg";
 import leafImage from "@/assets/designs/leaf.jpg";
 import royalAsklerImage from "@/assets/designs/royal-askler.jpg";
-import runningBondImage from "@/assets/designs/running-bond.png";
+import runningBondImage from "@/assets/designs/running-bond.webp";
 import circleImage from "@/assets/designs/circle.jpg";
 
 import compassImage from "@/assets/designs/compass.jpg";
 import cycleTrackImage from "@/assets/designs/cycle-track.jpg";
 import gardenStoneImage from "@/assets/designs/garden-stone.jpg";
 import groveFillingImage from "@/assets/designs/grove-filling.jpg";
-import spiralImage from "@/assets/designs/spiral.png";
+import spiralImage from "@/assets/designs/spiral.webp";
 import londonCobbleImage from "@/assets/designs/london-cobble.jpg";
 import herringBoneImage from "@/assets/designs/herring-bone.jpg";
 

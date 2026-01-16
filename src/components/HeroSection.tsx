@@ -3,9 +3,9 @@ import { ArrowRight, Download, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Stamped Concrete Images
-import spiralImg from "@/assets/designs/spiral.png";
+import spiralImg from "@/assets/designs/spiral.webp";
 import circleImg from "@/assets/designs/circle.jpg";
-import verticalImg from "@/assets/designs/vertical.png";
+import verticalImg from "@/assets/designs/vertical.webp";
 import ashlarImg from "@/assets/designs/ashlar-english.jpg";
 import europeanFanImg from "@/assets/designs/european-fan.jpg";
 
