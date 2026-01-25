@@ -92,22 +92,22 @@ const epoxyDesigns: Design[] = [
 ];
 
 const concretePolishingDesigns: Design[] = [
-  { name: "Concrete Polishing 1", image: "/images/designs/concrete-polishing/cp-1.webp" },
-  { name: "Concrete Polishing 2", image: "/images/designs/concrete-polishing/cp-2.webp" },
-  { name: "Concrete Polishing 3", image: "/images/designs/concrete-polishing/cp-3.webp" },
-  { name: "Concrete Polishing 4", image: "/images/designs/concrete-polishing/cp-4.webp" },
+  { name: "Concrete Polishing 1", image: "/APS/images/designs/concrete-polishing/cp-1.webp" },
+  { name: "Concrete Polishing 2", image: "/APS/images/designs/concrete-polishing/cp-2.webp" },
+  { name: "Concrete Polishing 3", image: "/APS/images/designs/concrete-polishing/cp-3.webp" },
+  { name: "Concrete Polishing 4", image: "/APS/images/designs/concrete-polishing/cp-4.webp" },
 ];
 
 const exposeAggregateDesigns: Design[] = [
-  { name: "Expose Aggregate 1", image: "/images/designs/expose-aggregate/ea-1.webp" },
-  { name: "Expose Aggregate 2", image: "/images/designs/expose-aggregate/ea-2.webp" },
-  { name: "Expose Aggregate 3", image: "/images/designs/expose-aggregate/ea-3.webp" },
-  { name: "Expose Aggregate 4", image: "/images/designs/expose-aggregate/ea-4.webp" },
-  { name: "Expose Aggregate 5", image: "/images/designs/expose-aggregate/ea-5.webp" },
-  { name: "Expose Aggregate 6", image: "/images/designs/expose-aggregate/ea-6.webp" },
-  { name: "Expose Aggregate 7", image: "/images/designs/expose-aggregate/ea-7.webp" },
-  { name: "Expose Aggregate 8", image: "/images/designs/expose-aggregate/ea-8.webp" },
-  { name: "Expose Aggregate 9", image: "/images/designs/expose-aggregate/ea-9.webp" },
+  { name: "Expose Aggregate 1", image: "/APS/images/designs/expose-aggregate/ea-1.webp" },
+  { name: "Expose Aggregate 2", image: "/APS/images/designs/expose-aggregate/ea-2.webp" },
+  { name: "Expose Aggregate 3", image: "/APS/images/designs/expose-aggregate/ea-3.webp" },
+  { name: "Expose Aggregate 4", image: "/APS/images/designs/expose-aggregate/ea-4.webp" },
+  { name: "Expose Aggregate 5", image: "/APS/images/designs/expose-aggregate/ea-5.webp" },
+  { name: "Expose Aggregate 6", image: "/APS/images/designs/expose-aggregate/ea-6.webp" },
+  { name: "Expose Aggregate 7", image: "/APS/images/designs/expose-aggregate/ea-7.webp" },
+  { name: "Expose Aggregate 8", image: "/APS/images/designs/expose-aggregate/ea-8.webp" },
+  { name: "Expose Aggregate 9", image: "/APS/images/designs/expose-aggregate/ea-9.webp" },
 ];
 
 const projectGalleries: Record<string, string[]> = {
