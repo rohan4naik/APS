@@ -330,7 +330,7 @@ export function DesignsSection() {
         </div>
 
         <Tabs defaultValue="stamp-concrete" className="w-full">
-          <TabsList className="flex flex-nowrap overflow-x-auto lg:grid w-full lg:grid-cols-4 mb-8 h-auto gap-2 md:gap-0 scrollbar-hide">
+          <TabsList className="flex flex-nowrap overflow-x-auto lg:grid w-full lg:grid-cols-4 mb-8 h-auto gap-2 md:gap-0">
             <TabsTrigger value="stamp-concrete" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamp Concrete</TabsTrigger>
             <TabsTrigger value="epoxy-flooring" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Epoxy Flooring</TabsTrigger>
             <TabsTrigger value="concrete-polishing" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Concrete Polishing</TabsTrigger>
