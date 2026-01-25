@@ -126,7 +126,7 @@ export function HeroSection() {
               <p className="text-accent font-montserrat font-semibold tracking-widest text-sm uppercase animate-fade-in">
                 Stamped Concrete & Materials
               </p>
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight text-embossed animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight text-embossed animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
                 Durable & Beautiful
                 <span className="block text-accent">Concrete Surfaces</span>
               </h1>
@@ -152,10 +152,10 @@ export function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
               <Button
                 onClick={scrollToDesigns}
-                className="btn-gold text-primary px-6 py-6 text-lg font-montserrat font-semibold w-full sm:w-auto"
+                className="btn-gold text-primary px-6 py-4 sm:py-6 text-base sm:text-lg font-montserrat font-semibold w-full sm:w-auto"
               >
                 Explore Services
                 <ArrowRight className="ml-2" size={20} />
@@ -163,7 +163,7 @@ export function HeroSection() {
               <Button
                 asChild
                 variant="outline"
-                className="border-accent/30 text-accent hover:bg-accent/10 hover:text-accent px-6 py-6 text-lg font-montserrat font-semibold bg-transparent w-full sm:w-auto"
+                className="border-accent/30 text-accent hover:bg-accent/10 hover:text-accent px-6 py-4 sm:py-6 text-base sm:text-lg font-montserrat font-semibold bg-transparent w-full sm:w-auto"
               >
                 <a href="/brochure.pdf" download="APS-Decorative-Brochure.pdf" className="flex items-center justify-center">
                   <Download className="mr-2" size={20} />

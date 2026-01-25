@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 
 // Import design images
-import square1x1Image from "@/assets/designs/square-1x1.webp";
+
 import square4x4Image from "@/assets/designs/square-4x4.webp";
 import textureImage from "@/assets/designs/texture.webp";
 import treeGratingImage from "@/assets/designs/tree-grating.webp";
@@ -20,7 +20,7 @@ import verticalImage from "@/assets/designs/vertical.webp";
 import woodenImage from "@/assets/designs/wooden.webp";
 import ashlarEnglishImage from "@/assets/designs/ashlar-english.jpg";
 import bigRandomStoneImage from "@/assets/designs/big-random-stone.jpg";
-import borderImage from "@/assets/designs/border.jpg";
+
 import europeanFanImage from "@/assets/designs/european-fan.jpg";
 import footpathImage from "@/assets/designs/footpath.jpg";
 import gameStampImage from "@/assets/designs/game-stamp.jpg";
@@ -29,13 +29,13 @@ import royalAsklerImage from "@/assets/designs/royal-askler.jpg";
 import runningBondImage from "@/assets/designs/running-bond.webp";
 import circleImage from "@/assets/designs/circle.jpg";
 
-import compassImage from "@/assets/designs/compass.jpg";
+
 import cycleTrackImage from "@/assets/designs/cycle-track.jpg";
 import gardenStoneImage from "@/assets/designs/garden-stone.jpg";
-import groveFillingImage from "@/assets/designs/grove-filling.jpg";
+
 import spiralImage from "@/assets/designs/spiral.webp";
-import londonCobbleImage from "@/assets/designs/london-cobble.jpg";
-import herringBoneImage from "@/assets/designs/herring-bone.jpg";
+
+
 
 import epoxy1 from "@/assets/designs/epoxy/epoxy-1.jpg";
 import epoxy2 from "@/assets/designs/epoxy/epoxy-2.jpg";
@@ -52,15 +52,15 @@ interface Design {
 }
 
 const designs: Design[] = [
-  { name: "Square 1×1", image: square1x1Image },
-  { name: "Square 4×4", image: square4x4Image },
+  { name: "Square 1'×1'", image: "/APS/images/projects/square-1x1/3.jpg" },
+  { name: "Square 4'×4'", image: square4x4Image },
   { name: "Texture", image: textureImage },
   { name: "Tree Grating", image: treeGratingImage },
   { name: "Vertical", image: verticalImage },
   { name: "Wooden", image: woodenImage },
   { name: "Ashlar English", image: ashlarEnglishImage },
   { name: "Random Stone", image: bigRandomStoneImage },
-  { name: "Borders", image: borderImage },
+  { name: "Borders", image: "/APS/images/projects/borders/2.jpg" },
   { name: "European Fan", image: europeanFanImage },
   { name: "Footpath", image: footpathImage },
   { name: "Game Stamp", image: gameStampImage },
@@ -69,13 +69,13 @@ const designs: Design[] = [
   { name: "Running Bond", image: runningBondImage },
   { name: "Circle", image: circleImage },
 
-  { name: "Compass", image: compassImage },
+  { name: "Compass", image: "/APS/images/projects/compass/2.jpg" },
   { name: "Cycle Track", image: cycleTrackImage },
   { name: "Garden Stone", image: gardenStoneImage },
-  { name: "Grove Filling", image: groveFillingImage },
+  { name: "Grove Filling", image: "/APS/images/projects/groove-filling/2.jpg" },
   { name: "Spiral", image: "/APS/images/projects/spiral/2.jpg" },
-  { name: "London Cobble", image: londonCobbleImage },
-  { name: "Herring Bone", image: herringBoneImage },
+  { name: "London Cobble", image: "/APS/images/projects/london-cobble/2.jpg" },
+  { name: "Herring Bone", image: "/APS/images/projects/herring-bone/2.jpg" },
   { name: "Pebbles", image: "/APS/images/projects/pebbles/1.jpg" },
 
 ];
@@ -114,6 +114,7 @@ const projectGalleries: Record<string, string[]> = {
   "Square 1×1": [
     "/APS/images/projects/square-1x1/1.jpg",
     "/APS/images/projects/square-1x1/2.jpg",
+    "/APS/images/projects/square-1x1/3.jpg",
   ],
   "Square 4×4": [
     "/APS/images/projects/square-4x4/1.jpg",
@@ -185,6 +186,8 @@ const projectGalleries: Record<string, string[]> = {
   ],
   "Compass": [
     "/APS/images/projects/compass/1.jpg",
+    "/APS/images/projects/compass/2.jpg",
+    "/APS/images/projects/compass/3.jpg",
   ],
   "Cycle Track": [
     "/APS/images/projects/cycle-track/1.jpg",
@@ -212,6 +215,7 @@ const projectGalleries: Record<string, string[]> = {
   ],
   "Herring Bone": [
     "/APS/images/projects/herring-bone/1.jpg",
+    "/APS/images/projects/herring-bone/2.jpg",
   ],
   "Borders": [
     "/APS/images/projects/borders/1.jpg",
@@ -228,6 +232,7 @@ const projectGalleries: Record<string, string[]> = {
 
 export function DesignsSection() {
   const [selectedDesign, setSelectedDesign] = useState<string | null>(null);
+  const [expandedProjectImage, setExpandedProjectImage] = useState<string | null>(null);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
@@ -505,7 +510,7 @@ export function DesignsSection() {
 
         {/* Design Modal */}
         <Dialog open={!!selectedDesign} onOpenChange={() => { setSelectedDesign(null); setUploadedImage(null); }}>
-          <DialogContent className={isImagePreviewOnly ? "max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none" : "max-w-lg"}>
+          <DialogContent className={isImagePreviewOnly ? "max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none" : "w-[90vw] max-w-3xl max-h-[90vh] overflow-y-auto"}>
             {isImagePreviewOnly ? (
               <div className="w-full h-full flex items-center justify-center">
                 <img
@@ -537,7 +542,7 @@ export function DesignsSection() {
                         className="hidden"
                       />
                       {uploadedImage ? (
-                        <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                        <div className="aspect-square bg-muted rounded-lg overflow-hidden max-w-[80%] mx-auto">
                           <img
                             src={uploadedImage}
                             alt="Uploaded design"
@@ -547,7 +552,7 @@ export function DesignsSection() {
                       ) : (
                         <button
                           onClick={() => fileInputRef.current?.click()}
-                          className="aspect-video w-full bg-muted rounded-lg flex flex-col items-center justify-center border-2 border-dashed border-accent/30 hover:border-accent/60 transition-colors cursor-pointer"
+                          className="aspect-square w-full bg-muted rounded-lg flex flex-col items-center justify-center border-2 border-dashed border-accent/30 hover:border-accent/60 transition-colors cursor-pointer"
                         >
                           <Upload className="text-accent mb-2" size={40} />
                           <p className="text-muted-foreground font-montserrat">Click to upload your design</p>
@@ -571,7 +576,7 @@ export function DesignsSection() {
                     /* Regular Design - Show design image and project gallery */
                     <>
                       {(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image ? (
-                        <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                        <div className="aspect-square bg-muted rounded-lg overflow-hidden max-w-[80%] mx-auto">
                           <img
                             src={(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image}
                             alt={selectedDesign || ""}
@@ -579,7 +584,7 @@ export function DesignsSection() {
                           />
                         </div>
                       ) : (
-                        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                        <div className="aspect-square bg-muted rounded-lg flex items-center justify-center max-w-[80%] mx-auto">
                           <p className="text-muted-foreground">Design preview coming soon</p>
                         </div>
                       )}
@@ -605,7 +610,8 @@ export function DesignsSection() {
                                 return (
                                   <div
                                     key={i}
-                                    className="aspect-square bg-muted/50 rounded-md flex items-center justify-center border border-dashed border-muted-foreground/20 overflow-hidden"
+                                    className={`aspect-square bg-muted/50 rounded-md flex items-center justify-center border border-dashed border-muted-foreground/20 overflow-hidden ${hasImage ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`}
+                                    onClick={() => hasImage && setExpandedProjectImage(hasImage)}
                                   >
                                     {hasImage ? (
                                       <img
@@ -643,6 +649,19 @@ export function DesignsSection() {
           </DialogContent>
         </Dialog>
       </div>
+
+      {/* Expanded Project Image Dialog */}
+      <Dialog open={!!expandedProjectImage} onOpenChange={() => setExpandedProjectImage(null)}>
+        <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+          <div className="w-full h-full flex items-center justify-center pointer-events-none">
+            <img
+              src={expandedProjectImage || ""}
+              alt="Expanded project view"
+              className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl pointer-events-auto"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }

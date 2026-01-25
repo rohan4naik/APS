@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
+import apsLogo from "@/assets/aps-logo.jpg";
+
 
 const navLinks = [
   { name: "Home", href: "#home", isExternal: false },
@@ -56,12 +58,18 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <div className="relative">
-              <span className="font-heading text-2xl md:text-3xl text-primary-foreground text-embossed tracking-wider">
-                APS
-              </span>
-              <span className="font-heading text-lg md:text-xl text-accent ml-1 text-embossed">
-                DECORATIVE
+            <img src={apsLogo} alt="APS Decorative Logo" className="h-12 w-auto object-contain" />
+            <div className="flex flex-col">
+              <div className="flex items-center">
+                <span className="font-heading text-xl md:text-3xl text-primary-foreground text-embossed tracking-wider">
+                  APS
+                </span>
+                <span className="font-heading text-sm md:text-xl text-accent ml-1 text-embossed">
+                  DECORATIVE
+                </span>
+              </div>
+              <span className="text-[8px] md:text-xs text-primary-foreground/60 font-montserrat tracking-[0.2em] -mt-1 leading-none uppercase">
+                We Simplify World
               </span>
             </div>
           </a>
