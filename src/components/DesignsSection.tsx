@@ -581,6 +581,8 @@ export function DesignsSection() {
                             src={(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image}
                             alt={selectedDesign || ""}
                             className="w-full h-full object-contain" // Changed from object-cover to contain to see full image
+                            loading="lazy"
+                            decoding="async"
                           />
                         </div>
                       ) : (
@@ -618,6 +620,8 @@ export function DesignsSection() {
                                         src={hasImage}
                                         alt={`${selectedDesign} project ${i + 1}`}
                                         className="w-full h-full object-cover"
+                                        loading="lazy"
+                                        decoding="async"
                                       />
                                     ) : (
                                       <p className="text-muted-foreground/50 text-xs text-center">Coming soon</p>

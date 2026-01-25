@@ -193,6 +193,8 @@ export function HeroSection() {
                           src={block.image}
                           alt={block.name}
                           className="w-full h-full object-cover"
+                          loading="eager"
+                          decoding="async"
                         />
                       </div>
 

@@ -61,6 +61,8 @@ export function ClientsSection() {
                     src={client.logo}
                     alt={client.name}
                     className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-700"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <>

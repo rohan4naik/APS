@@ -40,6 +40,8 @@ const Product = () => {
                           src={product.image}
                           alt={product.name}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       <div className="p-6 flex flex-col flex-grow">
@@ -95,6 +97,8 @@ const Product = () => {
                           src={product.image}
                           alt={product.name}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       <div className="p-6 flex flex-col flex-grow">
@@ -161,6 +165,8 @@ const Product = () => {
                           src={image}
                           alt={`Stamp Concrete Mould ${index + 1}`}
                           className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       <div className="p-6 flex flex-col items-center justify-center bg-card">
