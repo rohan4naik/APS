@@ -20,11 +20,17 @@ const Product = () => {
             </div>
 
             <Tabs defaultValue="stamping-material" className="w-full">
-              <TabsList className="flex flex-nowrap overflow-x-auto md:grid w-full md:grid-cols-3 mb-8 h-auto gap-2 md:gap-0">
-                <TabsTrigger value="stamping-material" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamping Material</TabsTrigger>
-                <TabsTrigger value="decorative-tools" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Decorative Tools</TabsTrigger>
-                <TabsTrigger value="stamp-concrete-mould" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamp Concrete Mould</TabsTrigger>
-              </TabsList>
+              <div className="relative mb-8">
+                {/* Gradient indicators for scroll */}
+                <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent pointer-events-none z-10 md:hidden" />
+                <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent pointer-events-none z-10 md:hidden" />
+
+                <TabsList className="flex flex-nowrap overflow-x-auto md:grid w-full md:grid-cols-3 h-auto gap-2 md:gap-0 pb-2 md:pb-0">
+                  <TabsTrigger value="stamping-material" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamping Material</TabsTrigger>
+                  <TabsTrigger value="decorative-tools" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Decorative Tools</TabsTrigger>
+                  <TabsTrigger value="stamp-concrete-mould" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamp Concrete Mould</TabsTrigger>
+                </TabsList>
+              </div>
 
               <TabsContent value="stamping-material" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

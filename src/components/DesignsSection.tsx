@@ -330,12 +330,18 @@ export function DesignsSection() {
         </div>
 
         <Tabs defaultValue="stamp-concrete" className="w-full">
-          <TabsList className="flex flex-nowrap overflow-x-auto lg:grid w-full lg:grid-cols-4 mb-8 h-auto gap-2 md:gap-0">
-            <TabsTrigger value="stamp-concrete" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamp Concrete</TabsTrigger>
-            <TabsTrigger value="epoxy-flooring" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Epoxy Flooring</TabsTrigger>
-            <TabsTrigger value="concrete-polishing" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Concrete Polishing</TabsTrigger>
-            <TabsTrigger value="expose-aggregate" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Expose Aggregate</TabsTrigger>
-          </TabsList>
+          <div className="relative mb-8">
+            {/* Gradient indicators for scroll */}
+            <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-secondary/30 to-transparent pointer-events-none z-10 lg:hidden" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-secondary/30 to-transparent pointer-events-none z-10 lg:hidden" />
+
+            <TabsList className="flex flex-nowrap overflow-x-auto lg:grid w-full lg:grid-cols-4 h-auto gap-2 md:gap-0 pb-2 lg:pb-0">
+              <TabsTrigger value="stamp-concrete" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamp Concrete</TabsTrigger>
+              <TabsTrigger value="epoxy-flooring" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Epoxy Flooring</TabsTrigger>
+              <TabsTrigger value="concrete-polishing" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Concrete Polishing</TabsTrigger>
+              <TabsTrigger value="expose-aggregate" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Expose Aggregate</TabsTrigger>
+            </TabsList>
+          </div>
 
           <TabsContent value="stamp-concrete" className="space-y-10 animate-in fade-in-50 duration-500">
 
