@@ -18,33 +18,33 @@ import textureImage from "@/assets/designs/texture.webp";
 import treeGratingImage from "@/assets/designs/tree-grating.webp";
 import verticalImage from "@/assets/designs/vertical.webp";
 import woodenImage from "@/assets/designs/wooden.webp";
-import ashlarEnglishImage from "@/assets/designs/ashlar-english.jpg";
-import bigRandomStoneImage from "@/assets/designs/big-random-stone.jpg";
+import ashlarEnglishImage from "@/assets/designs/ashlar-english.webp";
+import bigRandomStoneImage from "@/assets/designs/big-random-stone.webp";
 
-import europeanFanImage from "@/assets/designs/european-fan.jpg";
-import footpathImage from "@/assets/designs/footpath.jpg";
-import gameStampImage from "@/assets/designs/game-stamp.jpg";
-import leafImage from "@/assets/designs/leaf.jpg";
-import royalAsklerImage from "@/assets/designs/royal-askler.jpg";
+import europeanFanImage from "@/assets/designs/european-fan.webp";
+import footpathImage from "@/assets/designs/footpath.webp";
+import gameStampImage from "@/assets/designs/game-stamp.webp";
+import leafImage from "@/assets/designs/leaf.webp";
+import royalAsklerImage from "@/assets/designs/royal-askler.webp";
 import runningBondImage from "@/assets/designs/running-bond.webp";
-import circleImage from "@/assets/designs/circle.jpg";
+import circleImage from "@/assets/designs/circle.webp";
 
 
-import cycleTrackImage from "@/assets/designs/cycle-track.jpg";
-import gardenStoneImage from "@/assets/designs/garden-stone.jpg";
+import cycleTrackImage from "@/assets/designs/cycle-track.webp";
+import gardenStoneImage from "@/assets/designs/garden-stone.webp";
 
 import spiralImage from "@/assets/designs/spiral.webp";
 
 
 
-import epoxy1 from "@/assets/designs/epoxy/epoxy-1.jpg";
-import epoxy2 from "@/assets/designs/epoxy/epoxy-2.jpg";
-import epoxy3 from "@/assets/designs/epoxy/epoxy-3.jpg";
-import epoxy4 from "@/assets/designs/epoxy/epoxy-4.jpg";
-import epoxy5 from "@/assets/designs/epoxy/epoxy-5.jpg";
-import epoxy6 from "@/assets/designs/epoxy/epoxy-6.jpg";
-import epoxy7 from "@/assets/designs/epoxy/epoxy-7.jpg";
-import epoxy8 from "@/assets/designs/epoxy/epoxy-8.jpg";
+import epoxy1 from "@/assets/designs/epoxy/epoxy-1.webp";
+import epoxy2 from "@/assets/designs/epoxy/epoxy-2.webp";
+import epoxy3 from "@/assets/designs/epoxy/epoxy-3.webp";
+import epoxy4 from "@/assets/designs/epoxy/epoxy-4.webp";
+import epoxy5 from "@/assets/designs/epoxy/epoxy-5.webp";
+import epoxy6 from "@/assets/designs/epoxy/epoxy-6.webp";
+import epoxy7 from "@/assets/designs/epoxy/epoxy-7.webp";
+import epoxy8 from "@/assets/designs/epoxy/epoxy-8.webp";
 
 interface Design {
   name: string;
@@ -52,7 +52,7 @@ interface Design {
 }
 
 const designs: Design[] = [
-  { name: "Square 1'×1'", image: "/APS/images/projects/square-1x1/3.jpg" },
+  { name: "Square 1'×1'", image: "/APS/images/projects/square-1x1/3.webp" },
   { name: "Square 4'×4'", image: square4x4Image },
   { name: "Texture", image: textureImage },
   { name: "Tree Grating", image: treeGratingImage },
@@ -60,23 +60,23 @@ const designs: Design[] = [
   { name: "Wooden", image: woodenImage },
   { name: "Ashlar English", image: ashlarEnglishImage },
   { name: "Random Stone", image: bigRandomStoneImage },
-  { name: "Borders", image: "/APS/images/projects/borders/2.jpg" },
+  { name: "Borders", image: "/APS/images/projects/borders/2.webp" },
   { name: "European Fan", image: europeanFanImage },
   { name: "Footpath", image: footpathImage },
   { name: "Game Stamp", image: gameStampImage },
-  { name: "Leaf", image: "/APS/images/projects/leaf/2.jpg" },
+  { name: "Leaf", image: "/APS/images/projects/leaf/2.webp" },
   { name: "Royal Askler", image: royalAsklerImage },
   { name: "Running Bond", image: runningBondImage },
   { name: "Circle", image: circleImage },
 
-  { name: "Compass", image: "/APS/images/projects/compass/2.jpg" },
+  { name: "Compass", image: "/APS/images/projects/compass/2.webp" },
   { name: "Cycle Track", image: cycleTrackImage },
   { name: "Garden Stone", image: gardenStoneImage },
-  { name: "Grove Filling", image: "/APS/images/projects/groove-filling/2.jpg" },
-  { name: "Spiral", image: "/APS/images/projects/spiral/2.jpg" },
-  { name: "London Cobble", image: "/APS/images/projects/london-cobble/2.jpg" },
-  { name: "Herring Bone", image: "/APS/images/projects/herring-bone/2.jpg" },
-  { name: "Pebbles", image: "/APS/images/projects/pebbles/1.jpg" },
+  { name: "Grove Filling", image: "/APS/images/projects/groove-filling/2.webp" },
+  { name: "Spiral", image: "/APS/images/projects/spiral/2.webp" },
+  { name: "London Cobble", image: "/APS/images/projects/london-cobble/2.webp" },
+  { name: "Herring Bone", image: "/APS/images/projects/herring-bone/2.webp" },
+  { name: "Pebbles", image: "/APS/images/projects/pebbles/1.webp" },
 
 ];
 
@@ -92,141 +92,141 @@ const epoxyDesigns: Design[] = [
 ];
 
 const concretePolishingDesigns: Design[] = [
-  { name: "Concrete Polishing 1", image: "/APS/images/designs/concrete-polishing/cp-1.jpg" },
-  { name: "Concrete Polishing 2", image: "/APS/images/designs/concrete-polishing/cp-2.jpg" },
-  { name: "Concrete Polishing 3", image: "/APS/images/designs/concrete-polishing/cp-3.jpg" },
-  { name: "Concrete Polishing 4", image: "/APS/images/designs/concrete-polishing/cp-4.jpg" },
+  { name: "Concrete Polishing 1", image: "/APS/images/designs/concrete-polishing/cp-1.webp" },
+  { name: "Concrete Polishing 2", image: "/APS/images/designs/concrete-polishing/cp-2.webp" },
+  { name: "Concrete Polishing 3", image: "/APS/images/designs/concrete-polishing/cp-3.webp" },
+  { name: "Concrete Polishing 4", image: "/APS/images/designs/concrete-polishing/cp-4.webp" },
 ];
 
 const exposeAggregateDesigns: Design[] = [
-  { name: "Expose Aggregate 1", image: "/APS/images/designs/expose-aggregate/ea-1.jpg" },
-  { name: "Expose Aggregate 2", image: "/APS/images/designs/expose-aggregate/ea-2.jpg" },
-  { name: "Expose Aggregate 3", image: "/APS/images/designs/expose-aggregate/ea-3.jpg" },
-  { name: "Expose Aggregate 4", image: "/APS/images/designs/expose-aggregate/ea-4.jpg" },
-  { name: "Expose Aggregate 5", image: "/APS/images/designs/expose-aggregate/ea-5.jpg" },
-  { name: "Expose Aggregate 6", image: "/APS/images/designs/expose-aggregate/ea-6.jpg" },
-  { name: "Expose Aggregate 7", image: "/APS/images/designs/expose-aggregate/ea-7.jpg" },
-  { name: "Expose Aggregate 8", image: "/APS/images/designs/expose-aggregate/ea-8.jpg" },
-  { name: "Expose Aggregate 9", image: "/APS/images/designs/expose-aggregate/ea-9.jpg" },
+  { name: "Expose Aggregate 1", image: "/APS/images/designs/expose-aggregate/ea-1.webp" },
+  { name: "Expose Aggregate 2", image: "/APS/images/designs/expose-aggregate/ea-2.webp" },
+  { name: "Expose Aggregate 3", image: "/APS/images/designs/expose-aggregate/ea-3.webp" },
+  { name: "Expose Aggregate 4", image: "/APS/images/designs/expose-aggregate/ea-4.webp" },
+  { name: "Expose Aggregate 5", image: "/APS/images/designs/expose-aggregate/ea-5.webp" },
+  { name: "Expose Aggregate 6", image: "/APS/images/designs/expose-aggregate/ea-6.webp" },
+  { name: "Expose Aggregate 7", image: "/APS/images/designs/expose-aggregate/ea-7.webp" },
+  { name: "Expose Aggregate 8", image: "/APS/images/designs/expose-aggregate/ea-8.webp" },
+  { name: "Expose Aggregate 9", image: "/APS/images/designs/expose-aggregate/ea-9.webp" },
 ];
 
 const projectGalleries: Record<string, string[]> = {
   "Square 1×1": [
-    "/APS/images/projects/square-1x1/1.jpg",
-    "/APS/images/projects/square-1x1/2.jpg",
-    "/APS/images/projects/square-1x1/3.jpg",
+    "/APS/images/projects/square-1x1/1.webp",
+    "/APS/images/projects/square-1x1/2.webp",
+    "/APS/images/projects/square-1x1/3.webp",
   ],
   "Square 4×4": [
-    "/APS/images/projects/square-4x4/1.jpg",
-    "/APS/images/projects/square-4x4/2.jpg",
-    "/APS/images/projects/square-4x4/3.jpg",
+    "/APS/images/projects/square-4x4/1.webp",
+    "/APS/images/projects/square-4x4/2.webp",
+    "/APS/images/projects/square-4x4/3.webp",
   ],
   "Texture": [
-    "/APS/images/projects/texture/1.jpg",
-    "/APS/images/projects/texture/2.jpg",
+    "/APS/images/projects/texture/1.webp",
+    "/APS/images/projects/texture/2.webp",
   ],
   "Vertical": [
-    "/APS/images/projects/vertical/1.jpg",
-    "/APS/images/projects/vertical/2.jpg",
+    "/APS/images/projects/vertical/1.webp",
+    "/APS/images/projects/vertical/2.webp",
   ],
   "Tree Grating": [
-    "/APS/images/projects/tree-grating/1.jpg",
-    "/APS/images/projects/tree-grating/2.jpg",
+    "/APS/images/projects/tree-grating/1.webp",
+    "/APS/images/projects/tree-grating/2.webp",
   ],
   "Royal Askler": [
-    "/APS/images/projects/royal-ashlar/1.jpg",
-    "/APS/images/projects/royal-ashlar/2.jpg",
-    "/APS/images/projects/royal-ashlar/3.jpg",
+    "/APS/images/projects/royal-ashlar/1.webp",
+    "/APS/images/projects/royal-ashlar/2.webp",
+    "/APS/images/projects/royal-ashlar/3.webp",
   ],
   "Wooden": [
-    "/APS/images/projects/wooden/1.jpg",
-    "/APS/images/projects/wooden/2.jpg",
+    "/APS/images/projects/wooden/1.webp",
+    "/APS/images/projects/wooden/2.webp",
   ],
   "Ashlar English": [
-    "/APS/images/projects/ashlar-english/1.jpg",
-    "/APS/images/projects/ashlar-english/2.jpg",
-    "/APS/images/projects/ashlar-english/3.jpg",
+    "/APS/images/projects/ashlar-english/1.webp",
+    "/APS/images/projects/ashlar-english/2.webp",
+    "/APS/images/projects/ashlar-english/3.webp",
   ],
   "Random Stone": [
-    "/APS/images/projects/big-random-stone/1.jpg",
-    "/APS/images/projects/big-random-stone/2.jpg",
-    "/APS/images/projects/big-random-stone/3.jpg",
+    "/APS/images/projects/big-random-stone/1.webp",
+    "/APS/images/projects/big-random-stone/2.webp",
+    "/APS/images/projects/big-random-stone/3.webp",
   ],
   "European Fan": [
-    "/APS/images/projects/european-fan/1.jpg",
-    "/APS/images/projects/european-fan/2.jpg",
-    "/APS/images/projects/european-fan/3.jpg",
+    "/APS/images/projects/european-fan/1.webp",
+    "/APS/images/projects/european-fan/2.webp",
+    "/APS/images/projects/european-fan/3.webp",
   ],
   "Footpath": [
-    "/APS/images/projects/footpath/1.jpg",
-    "/APS/images/projects/footpath/2.jpg",
-    "/APS/images/projects/footpath/3.jpg",
+    "/APS/images/projects/footpath/1.webp",
+    "/APS/images/projects/footpath/2.webp",
+    "/APS/images/projects/footpath/3.webp",
   ],
   "Game Stamp": [
-    "/APS/images/projects/game-stamp/1.jpg",
-    "/APS/images/projects/game-stamp/2.jpg",
-    "/APS/images/projects/game-stamp/3.jpg",
-    "/APS/images/projects/game-stamp/4.jpg",
-    "/APS/images/projects/game-stamp/5.png",
+    "/APS/images/projects/game-stamp/1.webp",
+    "/APS/images/projects/game-stamp/2.webp",
+    "/APS/images/projects/game-stamp/3.webp",
+    "/APS/images/projects/game-stamp/4.webp",
+    "/APS/images/projects/game-stamp/5.webp",
   ],
   "Running Bond": [
-    "/APS/images/projects/running-bond/1.png",
-    "/APS/images/projects/running-bond/2.png",
+    "/APS/images/projects/running-bond/1.webp",
+    "/APS/images/projects/running-bond/2.webp",
   ],
   "Leaf": [
-    "/APS/images/projects/leaf/1.jpg",
-    "/APS/images/projects/leaf/2.jpg",
-    "/APS/images/projects/leaf/3.png",
+    "/APS/images/projects/leaf/1.webp",
+    "/APS/images/projects/leaf/2.webp",
+    "/APS/images/projects/leaf/3.webp",
   ],
   "Circle": [
-    "/APS/images/projects/circle/1.jpg",
-    "/APS/images/projects/circle/2.jpg",
-    "/APS/images/projects/circle/3.jpg",
-    "/APS/images/projects/circle/4.jpg",
+    "/APS/images/projects/circle/1.webp",
+    "/APS/images/projects/circle/2.webp",
+    "/APS/images/projects/circle/3.webp",
+    "/APS/images/projects/circle/4.webp",
   ],
   "Compass": [
-    "/APS/images/projects/compass/1.jpg",
-    "/APS/images/projects/compass/2.jpg",
-    "/APS/images/projects/compass/3.jpg",
+    "/APS/images/projects/compass/1.webp",
+    "/APS/images/projects/compass/2.webp",
+    "/APS/images/projects/compass/3.webp",
   ],
   "Cycle Track": [
-    "/APS/images/projects/cycle-track/1.jpg",
-    "/APS/images/projects/cycle-track/2.jpg",
-    "/APS/images/projects/cycle-track/3.jpg",
+    "/APS/images/projects/cycle-track/1.webp",
+    "/APS/images/projects/cycle-track/2.webp",
+    "/APS/images/projects/cycle-track/3.webp",
   ],
   "Garden Stone": [
-    "/APS/images/projects/garden-stone/1.jpg",
-    "/APS/images/projects/garden-stone/2.jpg",
-    "/APS/images/projects/garden-stone/3.jpg",
+    "/APS/images/projects/garden-stone/1.webp",
+    "/APS/images/projects/garden-stone/2.webp",
+    "/APS/images/projects/garden-stone/3.webp",
   ],
   "Grove Filling": [
-    "/APS/images/projects/groove-filling/1.jpg",
-    "/APS/images/projects/groove-filling/2.jpg",
-    "/APS/images/projects/groove-filling/3.jpg",
+    "/APS/images/projects/groove-filling/1.webp",
+    "/APS/images/projects/groove-filling/2.webp",
+    "/APS/images/projects/groove-filling/3.webp",
   ],
   "Spiral": [
-    "/APS/images/projects/spiral/1.jpg",
-    "/APS/images/projects/spiral/2.jpg",
+    "/APS/images/projects/spiral/1.webp",
+    "/APS/images/projects/spiral/2.webp",
   ],
   "London Cobble": [
-    "/APS/images/projects/london-cobble/1.jpg",
-    "/APS/images/projects/london-cobble/2.jpg",
-    "/APS/images/projects/london-cobble/3.jpg",
+    "/APS/images/projects/london-cobble/1.webp",
+    "/APS/images/projects/london-cobble/2.webp",
+    "/APS/images/projects/london-cobble/3.webp",
   ],
   "Herring Bone": [
-    "/APS/images/projects/herring-bone/1.jpg",
-    "/APS/images/projects/herring-bone/2.jpg",
+    "/APS/images/projects/herring-bone/1.webp",
+    "/APS/images/projects/herring-bone/2.webp",
   ],
   "Borders": [
-    "/APS/images/projects/borders/1.jpg",
-    "/APS/images/projects/borders/2.jpg",
-    "/APS/images/projects/borders/3.jpg",
-    "/APS/images/projects/borders/4.jpg",
+    "/APS/images/projects/borders/1.webp",
+    "/APS/images/projects/borders/2.webp",
+    "/APS/images/projects/borders/3.webp",
+    "/APS/images/projects/borders/4.webp",
   ],
   "Pebbles": [
-    "/APS/images/projects/pebbles/1.jpg",
-    "/APS/images/projects/pebbles/2.jpg",
-    "/APS/images/projects/pebbles/3.jpg",
+    "/APS/images/projects/pebbles/1.webp",
+    "/APS/images/projects/pebbles/2.webp",
+    "/APS/images/projects/pebbles/3.webp",
   ],
 };
 

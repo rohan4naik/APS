@@ -4,16 +4,16 @@ import { Button } from "@/components/ui/button";
 
 // Stamped Concrete Images
 import spiralImg from "@/assets/designs/spiral.webp";
-import circleImg from "@/assets/designs/circle.jpg";
+import circleImg from "@/assets/designs/circle.webp";
 import verticalImg from "@/assets/designs/vertical.webp";
-import ashlarImg from "@/assets/designs/ashlar-english.jpg";
-import europeanFanImg from "@/assets/designs/european-fan.jpg";
+import ashlarImg from "@/assets/designs/ashlar-english.webp";
+import europeanFanImg from "@/assets/designs/european-fan.webp";
 
 // Epoxy Images
-import epoxy1 from "@/assets/designs/epoxy/epoxy-1.jpg";
-import epoxy2 from "@/assets/designs/epoxy/epoxy-2.jpg";
-import epoxy3 from "@/assets/designs/epoxy/epoxy-3.jpg";
-import epoxy4 from "@/assets/designs/epoxy/epoxy-4.jpg";
+import epoxy1 from "@/assets/designs/epoxy/epoxy-1.webp";
+import epoxy2 from "@/assets/designs/epoxy/epoxy-2.webp";
+import epoxy3 from "@/assets/designs/epoxy/epoxy-3.webp";
+import epoxy4 from "@/assets/designs/epoxy/epoxy-4.webp";
 
 const stampedConcreteImages = [
   { name: "Spiral", image: spiralImg },
@@ -31,9 +31,9 @@ const epoxyImages = [
 ];
 
 const materialImages = [
-  { name: "Colour Hardener", image: "/APS/images/colour-hardener.jpg" },
-  { name: "Release Agent", image: "/APS/images/release-agent.jpg" },
-  { name: "Lacquer", image: "/APS/images/lacquer.jpg" },
+  { name: "Colour Hardener", image: "/APS/images/colour-hardener.webp" },
+  { name: "Release Agent", image: "/APS/images/release-agent.webp" },
+  { name: "Lacquer", image: "/APS/images/lacquer.webp" },
 ];
 
 const badges = [

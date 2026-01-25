@@ -29,10 +29,10 @@ const Product = () => {
               <TabsContent value="stamping-material" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
-                    { name: "Colour Hardener", image: "/APS/images/colour-hardener.jpg" },
-                    { name: "Release Agent", image: "/APS/images/release-agent.jpg" },
-                    { name: "Lacquer", image: "/APS/images/lacquer.jpg" },
-                    { name: "Chipping Stone", image: "/APS/images/chipping-stone.jpg" },
+                    { name: "Colour Hardener", image: "/APS/images/colour-hardener.webp" },
+                    { name: "Release Agent", image: "/APS/images/release-agent.webp" },
+                    { name: "Lacquer", image: "/APS/images/lacquer.webp" },
+                    { name: "Chipping Stone", image: "/APS/images/chipping-stone.webp" },
                   ].map((product) => (
                     <div key={product.name} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
                       <div className="aspect-square bg-muted/30 overflow-hidden relative skeleton-loading">
@@ -80,16 +80,16 @@ const Product = () => {
               <TabsContent value="decorative-tools" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
-                    { name: "Aluminium Handle", image: "/APS/images/tools/aluminium-swaged-handle.jpg" },
-                    { name: "Hand Edger", image: "/APS/images/tools/hand-edger.jpg" },
-                    { name: "Mag Bull Float", image: "/APS/images/tools/mag-bull-float.jpg" },
-                    { name: "Steel Trowel Round", image: "/APS/images/tools/steel-fresno-trowel-round.jpg" },
-                    { name: "HandHeld Groover", image: "/APS/images/tools/handheld-aluminium-groover.jpg" },
-                    { name: "Mag Float", image: "/APS/images/tools/mag-float.jpg" },
-                    { name: "Rock & Roll Bracket", image: "/APS/images/tools/rock-and-roll-bracket.jpg" },
-                    { name: "Round End Trowel", image: "/APS/images/tools/round-end-trowel.jpg" },
-                    { name: "Worm Gear Bracket", image: "/APS/images/tools/worm-gear-bracket.jpg" },
-                    { name: "Impact Tool / Tamper", image: "/APS/images/tools/impact-tool-tamper.jpg" },
+                    { name: "Aluminium Handle", image: "/APS/images/tools/aluminium-swaged-handle.webp" },
+                    { name: "Hand Edger", image: "/APS/images/tools/hand-edger.webp" },
+                    { name: "Mag Bull Float", image: "/APS/images/tools/mag-bull-float.webp" },
+                    { name: "Steel Trowel Round", image: "/APS/images/tools/steel-fresno-trowel-round.webp" },
+                    { name: "HandHeld Groover", image: "/APS/images/tools/handheld-aluminium-groover.webp" },
+                    { name: "Mag Float", image: "/APS/images/tools/mag-float.webp" },
+                    { name: "Rock & Roll Bracket", image: "/APS/images/tools/rock-and-roll-bracket.webp" },
+                    { name: "Round End Trowel", image: "/APS/images/tools/round-end-trowel.webp" },
+                    { name: "Worm Gear Bracket", image: "/APS/images/tools/worm-gear-bracket.webp" },
+                    { name: "Impact Tool / Tamper", image: "/APS/images/tools/impact-tool-tamper.webp" },
                   ].map((product) => (
                     <div key={product.name} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
                       <div className="aspect-square bg-muted/30 overflow-hidden relative skeleton-loading">
@@ -139,25 +139,25 @@ const Product = () => {
               <TabsContent value="stamp-concrete-mould" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
                   {[
-                    "/APS/images/moulds/mould-1.jpg",
-                    "/APS/images/moulds/mould-2.jpg",
-                    "/APS/images/moulds/mould-3.jpg",
-                    "/APS/images/moulds/mould-4.jpg",
-                    "/APS/images/moulds/mould-5.jpg",
-                    "/APS/images/moulds/mould-6.jpg",
-                    "/APS/images/moulds/mould-7.jpg",
-                    "/APS/images/moulds/mould-8.jpg",
-                    "/APS/images/moulds/mould-9.jpg",
-                    "/APS/images/moulds/mould-10.jpg",
-                    "/APS/images/moulds/mould-11.jpg",
-                    "/APS/images/moulds/mould-12.jpg",
-                    "/APS/images/moulds/mould-13.jpg",
-                    "/APS/images/moulds/mould-14.jpg",
-                    "/APS/images/moulds/mould-15.jpg",
-                    "/APS/images/moulds/mould-16.jpg",
-                    "/APS/images/moulds/mould-17.jpg",
-                    "/APS/images/moulds/mould-18.jpg",
-                    "/APS/images/moulds/mould-19.jpg"
+                    "/APS/images/moulds/mould-1.webp",
+                    "/APS/images/moulds/mould-2.webp",
+                    "/APS/images/moulds/mould-3.webp",
+                    "/APS/images/moulds/mould-4.webp",
+                    "/APS/images/moulds/mould-5.webp",
+                    "/APS/images/moulds/mould-6.webp",
+                    "/APS/images/moulds/mould-7.webp",
+                    "/APS/images/moulds/mould-8.webp",
+                    "/APS/images/moulds/mould-9.webp",
+                    "/APS/images/moulds/mould-10.webp",
+                    "/APS/images/moulds/mould-11.webp",
+                    "/APS/images/moulds/mould-12.webp",
+                    "/APS/images/moulds/mould-13.webp",
+                    "/APS/images/moulds/mould-14.webp",
+                    "/APS/images/moulds/mould-15.webp",
+                    "/APS/images/moulds/mould-16.webp",
+                    "/APS/images/moulds/mould-17.webp",
+                    "/APS/images/moulds/mould-18.webp",
+                    "/APS/images/moulds/mould-19.webp"
                   ].map((image, index) => (
                     <div key={index} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
                       <div className="aspect-[3/1] bg-muted/30 overflow-hidden relative skeleton-loading">

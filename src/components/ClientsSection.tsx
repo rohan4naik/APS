@@ -2,14 +2,14 @@ import { Building, Building2, Factory, Home, Landmark, Store } from "lucide-reac
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 // Import client logos
-import amanoraLogo from "@/assets/clients/amanora.png";
-import kumarPacificLogo from "@/assets/clients/kumar-pacific.png";
-import shirkeLogo from "@/assets/clients/shirke.jpg";
-import koltePatilLogo from "@/assets/clients/kolte-patil.jpg";
-import pmcLogo from "@/assets/clients/pmc.jpg";
-import chowguleLogo from "@/assets/clients/chowgule.png";
-import ajwaniLogo from "@/assets/clients/ajwani.jpg";
-import bvgLogo from "@/assets/clients/bvg.jpg";
+import amanoraLogo from "@/assets/clients/amanora.webp";
+import kumarPacificLogo from "@/assets/clients/kumar-pacific.webp";
+import shirkeLogo from "@/assets/clients/shirke.webp";
+import koltePatilLogo from "@/assets/clients/kolte-patil.webp";
+import pmcLogo from "@/assets/clients/pmc.webp";
+import chowguleLogo from "@/assets/clients/chowgule.webp";
+import ajwaniLogo from "@/assets/clients/ajwani.webp";
+import bvgLogo from "@/assets/clients/bvg.webp";
 
 const clients = [
   { name: "Amanora", logo: amanoraLogo, icon: Building },
