@@ -166,7 +166,7 @@ const Product = () => {
                     "/APS/images/moulds/mould-19.webp"
                   ].map((image, index) => (
                     <div key={index} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
-                      <div className="aspect-[3/1] bg-muted/30 overflow-hidden relative skeleton-loading">
+                      <div className="aspect-[2/1] md:aspect-[3/1] bg-muted/30 overflow-hidden relative skeleton-loading">
                         <img
                           src={image}
                           alt={`Stamp Concrete Mould ${index + 1}`}
@@ -175,14 +175,14 @@ const Product = () => {
                           decoding="async"
                         />
                       </div>
-                      <div className="p-6 flex flex-col items-center justify-center bg-card">
+                      <div className="p-3 md:p-6 flex flex-col items-center justify-center bg-card">
                         <a
                           href={`https://wa.me/917020999425?text=${encodeURIComponent(
                             `Hello, I would like to enquire about this stamp concrete mould.\n\nImage: https://rohan4naik.github.io${image}`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center w-full max-w-[200px] px-4 py-2 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-lg transition-colors font-medium text-sm"
+                          className="inline-flex items-center justify-center w-full max-w-[200px] px-3 py-1.5 md:px-4 md:py-2 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-lg transition-colors font-medium text-xs md:text-sm"
                         >
                           <span className="mr-2">Enquire</span>
                           <svg
