@@ -25,7 +25,7 @@ import europeanFanImage from "@/assets/designs/european-fan.webp";
 import footpathImage from "@/assets/designs/footpath.webp";
 import gameStampImage from "@/assets/designs/game-stamp.webp";
 import leafImage from "@/assets/designs/leaf.webp";
-import royalAsklerImage from "@/assets/designs/royal-askler.webp";
+import royalAshlarImage from "@/assets/designs/royal-ashlar.webp";
 import runningBondImage from "@/assets/designs/running-bond.webp";
 import circleImage from "@/assets/designs/circle.webp";
 
@@ -53,25 +53,25 @@ interface Design {
 
 const designs: Design[] = [
   { name: "Square 1'×1'", image: "/APS/images/projects/square-1x1/3.webp" },
-  { name: "Square 4'×4'", image: square4x4Image },
-  { name: "Texture", image: textureImage },
-  { name: "Tree Grating", image: treeGratingImage },
-  { name: "Vertical", image: verticalImage },
-  { name: "Wooden", image: woodenImage },
-  { name: "Ashlar English", image: ashlarEnglishImage },
-  { name: "Random Stone", image: bigRandomStoneImage },
+  { name: "Square 4'×4'", image: "/APS/images/designs/square-4x4.webp" },
+  { name: "Texture", image: "/APS/images/designs/texture.webp" },
+  { name: "Tree Grating", image: "/APS/images/designs/tree-grating.webp" },
+  { name: "Vertical", image: "/APS/images/designs/vertical.webp" },
+  { name: "Wooden", image: "/APS/images/designs/wooden.webp" },
+  { name: "Ashlar English", image: "/APS/images/designs/ashlar-english.webp" },
+  { name: "Random Stone", image: "/APS/images/designs/big-random-stone.webp" },
   { name: "Borders", image: "/APS/images/projects/borders/2.webp" },
-  { name: "European Fan", image: europeanFanImage },
-  { name: "Footpath", image: footpathImage },
-  { name: "Game Stamp", image: gameStampImage },
+  { name: "European Fan", image: "/APS/images/designs/european-fan.webp" },
+  { name: "Footpath", image: "/APS/images/designs/footpath.webp" },
+  { name: "Game Stamp", image: "/APS/images/designs/game-stamp.webp" },
   { name: "Leaf", image: "/APS/images/projects/leaf/2.webp" },
-  { name: "Royal Askler", image: royalAsklerImage },
-  { name: "Running Bond", image: runningBondImage },
-  { name: "Circle", image: circleImage },
+  { name: "Royal Ashlar", image: "/APS/images/designs/royal-ashlar.webp" },
+  { name: "Running Bond", image: "/APS/images/designs/running-bond.webp" },
+  { name: "Circle", image: "/APS/images/designs/circle.webp" },
 
   { name: "Compass", image: "/APS/images/projects/compass/2.webp" },
-  { name: "Cycle Track", image: cycleTrackImage },
-  { name: "Garden Stone", image: gardenStoneImage },
+  { name: "Cycle Track", image: "/APS/images/designs/cycle-track.webp" },
+  { name: "Garden Stone", image: "/APS/images/designs/garden-stone.webp" },
   { name: "Grove Filling", image: "/APS/images/projects/groove-filling/2.webp" },
   { name: "Spiral", image: "/APS/images/projects/spiral/2.webp" },
   { name: "London Cobble", image: "/APS/images/projects/london-cobble/2.webp" },
@@ -92,31 +92,31 @@ const epoxyDesigns: Design[] = [
 ];
 
 const concretePolishingDesigns: Design[] = [
-  { name: "Concrete Polishing 1", image: "/APS/images/designs/concrete-polishing/cp-1.webp" },
-  { name: "Concrete Polishing 2", image: "/APS/images/designs/concrete-polishing/cp-2.webp" },
-  { name: "Concrete Polishing 3", image: "/APS/images/designs/concrete-polishing/cp-3.webp" },
-  { name: "Concrete Polishing 4", image: "/APS/images/designs/concrete-polishing/cp-4.webp" },
+  { name: "Concrete Polishing 1", image: "/images/designs/concrete-polishing/cp-1.webp" },
+  { name: "Concrete Polishing 2", image: "/images/designs/concrete-polishing/cp-2.webp" },
+  { name: "Concrete Polishing 3", image: "/images/designs/concrete-polishing/cp-3.webp" },
+  { name: "Concrete Polishing 4", image: "/images/designs/concrete-polishing/cp-4.webp" },
 ];
 
 const exposeAggregateDesigns: Design[] = [
-  { name: "Expose Aggregate 1", image: "/APS/images/designs/expose-aggregate/ea-1.webp" },
-  { name: "Expose Aggregate 2", image: "/APS/images/designs/expose-aggregate/ea-2.webp" },
-  { name: "Expose Aggregate 3", image: "/APS/images/designs/expose-aggregate/ea-3.webp" },
-  { name: "Expose Aggregate 4", image: "/APS/images/designs/expose-aggregate/ea-4.webp" },
-  { name: "Expose Aggregate 5", image: "/APS/images/designs/expose-aggregate/ea-5.webp" },
-  { name: "Expose Aggregate 6", image: "/APS/images/designs/expose-aggregate/ea-6.webp" },
-  { name: "Expose Aggregate 7", image: "/APS/images/designs/expose-aggregate/ea-7.webp" },
-  { name: "Expose Aggregate 8", image: "/APS/images/designs/expose-aggregate/ea-8.webp" },
-  { name: "Expose Aggregate 9", image: "/APS/images/designs/expose-aggregate/ea-9.webp" },
+  { name: "Expose Aggregate 1", image: "/images/designs/expose-aggregate/ea-1.webp" },
+  { name: "Expose Aggregate 2", image: "/images/designs/expose-aggregate/ea-2.webp" },
+  { name: "Expose Aggregate 3", image: "/images/designs/expose-aggregate/ea-3.webp" },
+  { name: "Expose Aggregate 4", image: "/images/designs/expose-aggregate/ea-4.webp" },
+  { name: "Expose Aggregate 5", image: "/images/designs/expose-aggregate/ea-5.webp" },
+  { name: "Expose Aggregate 6", image: "/images/designs/expose-aggregate/ea-6.webp" },
+  { name: "Expose Aggregate 7", image: "/images/designs/expose-aggregate/ea-7.webp" },
+  { name: "Expose Aggregate 8", image: "/images/designs/expose-aggregate/ea-8.webp" },
+  { name: "Expose Aggregate 9", image: "/images/designs/expose-aggregate/ea-9.webp" },
 ];
 
 const projectGalleries: Record<string, string[]> = {
-  "Square 1×1": [
+  "Square 1'×1'": [
     "/APS/images/projects/square-1x1/1.webp",
     "/APS/images/projects/square-1x1/2.webp",
     "/APS/images/projects/square-1x1/3.webp",
   ],
-  "Square 4×4": [
+  "Square 4'×4'": [
     "/APS/images/projects/square-4x4/1.webp",
     "/APS/images/projects/square-4x4/2.webp",
     "/APS/images/projects/square-4x4/3.webp",
@@ -133,7 +133,7 @@ const projectGalleries: Record<string, string[]> = {
     "/APS/images/projects/tree-grating/1.webp",
     "/APS/images/projects/tree-grating/2.webp",
   ],
-  "Royal Askler": [
+  "Royal Ashlar": [
     "/APS/images/projects/royal-ashlar/1.webp",
     "/APS/images/projects/royal-ashlar/2.webp",
     "/APS/images/projects/royal-ashlar/3.webp",
@@ -594,7 +594,10 @@ export function DesignsSection() {
                       {(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image ? (
                         <div className="aspect-square bg-muted rounded-lg overflow-hidden max-w-[80%] mx-auto skeleton-loading">
                           <img
-                            src={(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image}
+                            src={(designs.find(d => d.name === selectedDesign) ||
+                              epoxyDesigns.find(d => d.name === selectedDesign) ||
+                              concretePolishingDesigns.find(d => d.name === selectedDesign) ||
+                              exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image}
                             alt={selectedDesign || ""}
                             className="w-full h-full object-contain" // Changed from object-cover to contain to see full image
                             loading="lazy"
