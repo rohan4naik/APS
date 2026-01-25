@@ -382,4 +382,30 @@
   .font-montserrat {
     font-family: 'Montserrat', sans-serif;
   }
+
+  /* Skeleton Loading */
+  @keyframes skeleton-pulse {
+    0% {
+      background-color: hsl(var(--muted) / 0.5);
+    }
+    50% {
+      background-color: hsl(var(--muted) / 0.8);
+    }
+    100% {
+      background-color: hsl(var(--muted) / 0.5);
+    }
+  }
+
+  .skeleton-loading {
+    animation: skeleton-pulse 1.5s ease-in-out infinite;
+  }
+
+  /* Scrollbar Hide */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
 }

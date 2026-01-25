@@ -35,7 +35,7 @@ const Product = () => {
                     { name: "Chipping Stone", image: "/APS/images/chipping-stone.jpg" },
                   ].map((product) => (
                     <div key={product.name} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
-                      <div className="aspect-square bg-muted/30 overflow-hidden relative">
+                      <div className="aspect-square bg-muted/30 overflow-hidden relative skeleton-loading">
                         <img
                           src={product.image}
                           alt={product.name}
@@ -92,7 +92,7 @@ const Product = () => {
                     { name: "Impact Tool / Tamper", image: "/APS/images/tools/impact-tool-tamper.jpg" },
                   ].map((product) => (
                     <div key={product.name} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
-                      <div className="aspect-square bg-muted/30 overflow-hidden relative">
+                      <div className="aspect-square bg-muted/30 overflow-hidden relative skeleton-loading">
                         <img
                           src={product.image}
                           alt={product.name}
@@ -160,7 +160,7 @@ const Product = () => {
                     "/APS/images/moulds/mould-19.jpg"
                   ].map((image, index) => (
                     <div key={index} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
-                      <div className="aspect-[3/1] bg-muted/30 overflow-hidden relative">
+                      <div className="aspect-[3/1] bg-muted/30 overflow-hidden relative skeleton-loading">
                         <img
                           src={image}
                           alt={`Stamp Concrete Mould ${index + 1}`}

@@ -55,7 +55,7 @@ export function ClientsSection() {
               className="group relative opacity-0"
             >
               {/* Stepping stone tile */}
-              <div className="aspect-square bg-white border border-primary-foreground/10 rounded-lg flex flex-col items-center justify-center p-6 transition-all duration-500 hover:scale-105 hover:shadow-xl shadow-lg group-hover:border-accent/40 overflow-hidden">
+              <div className="aspect-square bg-white border border-primary-foreground/10 rounded-lg flex flex-col items-center justify-center p-6 transition-all duration-500 hover:scale-105 hover:shadow-xl shadow-lg group-hover:border-accent/40 overflow-hidden skeleton-loading">
                 {client.logo ? (
                   <img
                     src={client.logo}

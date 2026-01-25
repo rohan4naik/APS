@@ -330,11 +330,11 @@ export function DesignsSection() {
         </div>
 
         <Tabs defaultValue="stamp-concrete" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8">
-            <TabsTrigger value="stamp-concrete">Stamp Concrete</TabsTrigger>
-            <TabsTrigger value="epoxy-flooring">Epoxy Flooring</TabsTrigger>
-            <TabsTrigger value="concrete-polishing">Concrete Polishing</TabsTrigger>
-            <TabsTrigger value="expose-aggregate">Expose Aggregate</TabsTrigger>
+          <TabsList className="flex flex-nowrap overflow-x-auto lg:grid w-full lg:grid-cols-4 mb-8 h-auto gap-2 md:gap-0 scrollbar-hide">
+            <TabsTrigger value="stamp-concrete" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Stamp Concrete</TabsTrigger>
+            <TabsTrigger value="epoxy-flooring" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Epoxy Flooring</TabsTrigger>
+            <TabsTrigger value="concrete-polishing" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Concrete Polishing</TabsTrigger>
+            <TabsTrigger value="expose-aggregate" className="whitespace-nowrap px-6 py-3 min-w-[max-content]">Expose Aggregate</TabsTrigger>
           </TabsList>
 
           <TabsContent value="stamp-concrete" className="space-y-10 animate-in fade-in-50 duration-500">
@@ -352,8 +352,24 @@ export function DesignsSection() {
                   className="group flex flex-col items-center"
                   style={{ animationDelay: `${index * 0.03}s` }}
                 >
+                  <style>{`
+                    .image-loading {
+                      position: relative;
+                    }
+                    .image-loading::before {
+                      content: "";
+                      position: absolute;
+                      inset: 0;
+                      z-index: 1;
+                      background-color: hsl(var(--muted) / 0.3);
+                      animation: skeleton-pulse 1.5s ease-in-out infinite;
+                    }
+                    .image-loaded::before {
+                      display: none;
+                    }
+                  `}</style>
                   {/* Image */}
-                  <div className="relative aspect-square w-full bg-card rounded-lg overflow-hidden stamp-hover shadow-raised mb-2">
+                  <div className="relative aspect-square w-full bg-card rounded-lg overflow-hidden stamp-hover shadow-raised mb-2 skeleton-loading">
                     {design.image ? (
                       <img
                         src={design.image}
@@ -405,7 +421,7 @@ export function DesignsSection() {
                     onClick={() => setSelectedDesign(design.name)}
                     className="group flex flex-col items-center"
                   >
-                    <div className="relative aspect-square w-full bg-card rounded-lg overflow-hidden stamp-hover shadow-raised mb-2">
+                    <div className="relative aspect-square w-full bg-card rounded-lg overflow-hidden stamp-hover shadow-raised mb-2 skeleton-loading">
                       <img
                         src={design.image}
                         alt={design.name}
@@ -442,7 +458,7 @@ export function DesignsSection() {
                     onClick={() => setSelectedDesign(design.name)}
                     className="group flex flex-col items-center"
                   >
-                    <div className="relative aspect-[3/4] w-full bg-card rounded-lg overflow-hidden stamp-hover shadow-raised">
+                    <div className="relative aspect-[3/4] w-full bg-card rounded-lg overflow-hidden stamp-hover shadow-raised skeleton-loading">
                       <img
                         src={design.image}
                         alt={design.name}
@@ -576,7 +592,7 @@ export function DesignsSection() {
                     /* Regular Design - Show design image and project gallery */
                     <>
                       {(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image ? (
-                        <div className="aspect-square bg-muted rounded-lg overflow-hidden max-w-[80%] mx-auto">
+                        <div className="aspect-square bg-muted rounded-lg overflow-hidden max-w-[80%] mx-auto skeleton-loading">
                           <img
                             src={(designs.find(d => d.name === selectedDesign) || concretePolishingDesigns.find(d => d.name === selectedDesign) || exposeAggregateDesigns.find(d => d.name === selectedDesign))?.image}
                             alt={selectedDesign || ""}
@@ -612,7 +628,7 @@ export function DesignsSection() {
                                 return (
                                   <div
                                     key={i}
-                                    className={`aspect-square bg-muted/50 rounded-md flex items-center justify-center border border-dashed border-muted-foreground/20 overflow-hidden ${hasImage ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`}
+                                    className={`aspect-square bg-muted/50 rounded-md flex items-center justify-center border border-dashed border-muted-foreground/20 overflow-hidden skeleton-loading ${hasImage ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`}
                                     onClick={() => hasImage && setExpandedProjectImage(hasImage)}
                                   >
                                     {hasImage ? (
