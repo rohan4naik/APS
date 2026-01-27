@@ -86,16 +86,16 @@ const Product = () => {
               <TabsContent value="decorative-tools" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
-                    { name: "Aluminium Handle", image: "/APS/images/tools/aluminium-swaged-handle.webp" },
-                    { name: "Hand Edger", image: "/APS/images/tools/hand-edger.webp" },
-                    { name: "Mag Bull Float", image: "/APS/images/tools/mag-bull-float.webp" },
-                    { name: "Steel Trowel Round", image: "/APS/images/tools/steel-fresno-trowel-round.webp" },
-                    { name: "HandHeld Groover", image: "/APS/images/tools/handheld-aluminium-groover.webp" },
-                    { name: "Mag Float", image: "/APS/images/tools/mag-float.webp" },
-                    { name: "Rock & Roll Bracket", image: "/APS/images/tools/rock-and-roll-bracket.webp" },
-                    { name: "Round End Trowel", image: "/APS/images/tools/round-end-trowel.webp" },
-                    { name: "Worm Gear Bracket", image: "/APS/images/tools/worm-gear-bracket.webp" },
-                    { name: "Impact Tool / Tamper", image: "/APS/images/tools/impact-tool-tamper.webp" },
+                    { name: "Aluminium Handle", image: "/images/tools/aluminium-swaged-handle.webp" },
+                    { name: "Hand Edger", image: "/images/tools/hand-edger.webp" },
+                    { name: "Mag Bull Float", image: "/images/tools/mag-bull-float.webp" },
+                    { name: "Steel Trowel Round", image: "/images/tools/steel-fresno-trowel-round.webp" },
+                    { name: "HandHeld Groover", image: "/images/tools/handheld-aluminium-groover.webp" },
+                    { name: "Mag Float", image: "/images/tools/mag-float.webp" },
+                    { name: "Rock & Roll Bracket", image: "/images/tools/rock-and-roll-bracket.webp" },
+                    { name: "Round End Trowel", image: "/images/tools/round-end-trowel.webp" },
+                    { name: "Worm Gear Bracket", image: "/images/tools/worm-gear-bracket.webp" },
+                    { name: "Impact Tool / Tamper", image: "/images/tools/impact-tool-tamper.webp" },
                   ].map((product) => (
                     <div key={product.name} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
                       <div className="aspect-square bg-muted/30 overflow-hidden relative skeleton-loading">
