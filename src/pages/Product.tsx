@@ -55,7 +55,7 @@ const Product = () => {
                         <div className="mt-auto">
                           <a
                             href={`https://wa.me/917020999425?text=${encodeURIComponent(
-                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: https://rohan4naik.github.io${product.image}`
+                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: https://apsdecorative.com${product.image}`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -112,7 +112,7 @@ const Product = () => {
                         <div className="mt-auto">
                           <a
                             href={`https://wa.me/917020999425?text=${encodeURIComponent(
-                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: https://rohan4naik.github.io${product.image}`
+                              `Hello, I would like to enquire about ${product.name}\n\nProduct Image: https://apsdecorative.com${product.image}`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -145,25 +145,25 @@ const Product = () => {
               <TabsContent value="stamp-concrete-mould" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
                   {[
-                    "/APS/images/moulds/mould-1.webp",
-                    "/APS/images/moulds/mould-2.webp",
-                    "/APS/images/moulds/mould-3.webp",
-                    "/APS/images/moulds/mould-4.webp",
-                    "/APS/images/moulds/mould-5.webp",
-                    "/APS/images/moulds/mould-6.webp",
-                    "/APS/images/moulds/mould-7.webp",
-                    "/APS/images/moulds/mould-8.webp",
-                    "/APS/images/moulds/mould-9.webp",
-                    "/APS/images/moulds/mould-10.webp",
-                    "/APS/images/moulds/mould-11.webp",
-                    "/APS/images/moulds/mould-12.webp",
-                    "/APS/images/moulds/mould-13.webp",
-                    "/APS/images/moulds/mould-14.webp",
-                    "/APS/images/moulds/mould-15.webp",
-                    "/APS/images/moulds/mould-16.webp",
-                    "/APS/images/moulds/mould-17.webp",
-                    "/APS/images/moulds/mould-18.webp",
-                    "/APS/images/moulds/mould-19.webp"
+                    "/images/moulds/mould-1.webp",
+                    "/images/moulds/mould-2.webp",
+                    "/images/moulds/mould-3.webp",
+                    "/images/moulds/mould-4.webp",
+                    "/images/moulds/mould-5.webp",
+                    "/images/moulds/mould-6.webp",
+                    "/images/moulds/mould-7.webp",
+                    "/images/moulds/mould-8.webp",
+                    "/images/moulds/mould-9.webp",
+                    "/images/moulds/mould-10.webp",
+                    "/images/moulds/mould-11.webp",
+                    "/images/moulds/mould-12.webp",
+                    "/images/moulds/mould-13.webp",
+                    "/images/moulds/mould-14.webp",
+                    "/images/moulds/mould-15.webp",
+                    "/images/moulds/mould-16.webp",
+                    "/images/moulds/mould-17.webp",
+                    "/images/moulds/mould-18.webp",
+                    "/images/moulds/mould-19.webp"
                   ].map((image, index) => (
                     <div key={index} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
                       <div className="aspect-[2/1] md:aspect-[3/1] bg-muted/30 overflow-hidden relative skeleton-loading">
@@ -178,7 +178,7 @@ const Product = () => {
                       <div className="p-3 md:p-6 flex flex-col items-center justify-center bg-card">
                         <a
                           href={`https://wa.me/917020999425?text=${encodeURIComponent(
-                            `Hello, I would like to enquire about this stamp concrete mould.\n\nImage: https://rohan4naik.github.io${image}`
+                            `Hello, I would like to enquire about this stamp concrete mould.\n\nImage: https://apsdecorative.com${image}`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
