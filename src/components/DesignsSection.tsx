@@ -52,31 +52,31 @@ interface Design {
 }
 
 const designs: Design[] = [
-  { name: "Square 1'×1'", image: "/APS/images/projects/square-1x1/3.webp" },
-  { name: "Square 4'×4'", image: "/APS/images/designs/square-4x4.webp" },
-  { name: "Texture", image: "/APS/images/designs/texture.webp" },
-  { name: "Tree Grating", image: "/APS/images/designs/tree-grating.webp" },
-  { name: "Vertical", image: "/APS/images/designs/vertical.webp" },
-  { name: "Wooden", image: "/APS/images/designs/wooden.webp" },
-  { name: "Ashlar English", image: "/APS/images/designs/ashlar-english.webp" },
-  { name: "Random Stone", image: "/APS/images/designs/big-random-stone.webp" },
-  { name: "Borders", image: "/APS/images/projects/borders/2.webp" },
-  { name: "European Fan", image: "/APS/images/designs/european-fan.webp" },
-  { name: "Footpath", image: "/APS/images/designs/footpath.webp" },
-  { name: "Game Stamp", image: "/APS/images/designs/game-stamp.webp" },
-  { name: "Leaf", image: "/APS/images/projects/leaf/2.webp" },
-  { name: "Royal Ashlar", image: "/APS/images/designs/royal-ashlar.webp" },
-  { name: "Running Bond", image: "/APS/images/designs/running-bond.webp" },
-  { name: "Circle", image: "/APS/images/designs/circle.webp" },
+  { name: "Square 1'×1'", image: "/images/projects/square-1x1/3.webp" },
+  { name: "Square 4'×4'", image: "/images/designs/square-4x4.webp" },
+  { name: "Texture", image: "/images/designs/texture.webp" },
+  { name: "Tree Grating", image: "/images/designs/tree-grating.webp" },
+  { name: "Vertical", image: "/images/designs/vertical.webp" },
+  { name: "Wooden", image: "/images/designs/wooden.webp" },
+  { name: "Ashlar English", image: "/images/designs/ashlar-english.webp" },
+  { name: "Random Stone", image: "/images/designs/big-random-stone.webp" },
+  { name: "Borders", image: "/images/projects/borders/2.webp" },
+  { name: "European Fan", image: "/images/designs/european-fan.webp" },
+  { name: "Footpath", image: "/images/designs/footpath.webp" },
+  { name: "Game Stamp", image: "/images/designs/game-stamp.webp" },
+  { name: "Leaf", image: "/images/projects/leaf/2.webp" },
+  { name: "Royal Ashlar", image: "/images/designs/royal-ashlar.webp" },
+  { name: "Running Bond", image: "/images/designs/running-bond.webp" },
+  { name: "Circle", image: "/images/designs/circle.webp" },
 
-  { name: "Compass", image: "/APS/images/projects/compass/2.webp" },
-  { name: "Cycle Track", image: "/APS/images/designs/cycle-track.webp" },
-  { name: "Garden Stone", image: "/APS/images/designs/garden-stone.webp" },
-  { name: "Grove Filling", image: "/APS/images/projects/groove-filling/2.webp" },
-  { name: "Spiral", image: "/APS/images/projects/spiral/2.webp" },
-  { name: "London Cobble", image: "/APS/images/projects/london-cobble/2.webp" },
-  { name: "Herring Bone", image: "/APS/images/projects/herring-bone/2.webp" },
-  { name: "Pebbles", image: "/APS/images/projects/pebbles/1.webp" },
+  { name: "Compass", image: "/images/projects/compass/2.webp" },
+  { name: "Cycle Track", image: "/images/designs/cycle-track.webp" },
+  { name: "Garden Stone", image: "/images/designs/garden-stone.webp" },
+  { name: "Grove Filling", image: "/images/projects/groove-filling/2.webp" },
+  { name: "Spiral", image: "/images/projects/spiral/2.webp" },
+  { name: "London Cobble", image: "/images/projects/london-cobble/2.webp" },
+  { name: "Herring Bone", image: "/images/projects/herring-bone/2.webp" },
+  { name: "Pebbles", image: "/images/projects/pebbles/1.webp" },
 
 ];
 
@@ -92,22 +92,22 @@ const epoxyDesigns: Design[] = [
 ];
 
 const concretePolishingDesigns: Design[] = [
-  { name: "Concrete Polishing 1", image: "/APS/images/designs/concrete-polishing/cp-1.webp" },
-  { name: "Concrete Polishing 2", image: "/APS/images/designs/concrete-polishing/cp-2.webp" },
-  { name: "Concrete Polishing 3", image: "/APS/images/designs/concrete-polishing/cp-3.webp" },
-  { name: "Concrete Polishing 4", image: "/APS/images/designs/concrete-polishing/cp-4.webp" },
+  { name: "Concrete Polishing 1", image: "/images/designs/concrete-polishing/cp-1.webp" },
+  { name: "Concrete Polishing 2", image: "/images/designs/concrete-polishing/cp-2.webp" },
+  { name: "Concrete Polishing 3", image: "/images/designs/concrete-polishing/cp-3.webp" },
+  { name: "Concrete Polishing 4", image: "/images/designs/concrete-polishing/cp-4.webp" },
 ];
 
 const exposeAggregateDesigns: Design[] = [
-  { name: "Expose Aggregate 1", image: "/APS/images/designs/expose-aggregate/ea-1.webp" },
-  { name: "Expose Aggregate 2", image: "/APS/images/designs/expose-aggregate/ea-2.webp" },
-  { name: "Expose Aggregate 3", image: "/APS/images/designs/expose-aggregate/ea-3.webp" },
-  { name: "Expose Aggregate 4", image: "/APS/images/designs/expose-aggregate/ea-4.webp" },
-  { name: "Expose Aggregate 5", image: "/APS/images/designs/expose-aggregate/ea-5.webp" },
-  { name: "Expose Aggregate 6", image: "/APS/images/designs/expose-aggregate/ea-6.webp" },
-  { name: "Expose Aggregate 7", image: "/APS/images/designs/expose-aggregate/ea-7.webp" },
-  { name: "Expose Aggregate 8", image: "/APS/images/designs/expose-aggregate/ea-8.webp" },
-  { name: "Expose Aggregate 9", image: "/APS/images/designs/expose-aggregate/ea-9.webp" },
+  { name: "Expose Aggregate 1", image: "/images/designs/expose-aggregate/ea-1.webp" },
+  { name: "Expose Aggregate 2", image: "/images/designs/expose-aggregate/ea-2.webp" },
+  { name: "Expose Aggregate 3", image: "/images/designs/expose-aggregate/ea-3.webp" },
+  { name: "Expose Aggregate 4", image: "/images/designs/expose-aggregate/ea-4.webp" },
+  { name: "Expose Aggregate 5", image: "/images/designs/expose-aggregate/ea-5.webp" },
+  { name: "Expose Aggregate 6", image: "/images/designs/expose-aggregate/ea-6.webp" },
+  { name: "Expose Aggregate 7", image: "/images/designs/expose-aggregate/ea-7.webp" },
+  { name: "Expose Aggregate 8", image: "/images/designs/expose-aggregate/ea-8.webp" },
+  { name: "Expose Aggregate 9", image: "/images/designs/expose-aggregate/ea-9.webp" },
 ];
 
 const projectGalleries: Record<string, string[]> = {
