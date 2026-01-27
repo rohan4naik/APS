@@ -74,7 +74,7 @@ const designs: Design[] = [
   { name: "Compass", image: "/images/projects/compass/2.webp" },
   { name: "Cycle Track", image: "/images/designs/cycle-track.webp" },
   { name: "Garden Stone", image: "/images/designs/garden-stone.webp" },
-  { name: "Grove Filling", image: "/images/projects/groove-filling/2.webp" },
+  { name: "Groove Filling", image: "/images/projects/groove-filling/2.webp" },
   { name: "Spiral", image: "/images/projects/spiral/2.webp" },
   { name: "London Cobble", image: "/images/projects/london-cobble/2.webp" },
   { name: "Herring Bone", image: "/images/projects/herring-bone/2.webp" },
@@ -201,7 +201,7 @@ const projectGalleries: Record<string, string[]> = {
     "/images/projects/garden-stone/2.webp",
     "/images/projects/garden-stone/3.webp",
   ],
-  "Grove Filling": [
+  "Groove Filling": [
     "/images/projects/groove-filling/1.webp",
     "/images/projects/groove-filling/2.webp",
     "/images/projects/groove-filling/3.webp",
