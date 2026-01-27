@@ -11,6 +11,11 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 
+import sq11_1 from "@/assets/projects/square-1x1/1.webp";
+import sq11_2 from "@/assets/projects/square-1x1/2.webp";
+import sq11_3 from "@/assets/projects/square-1x1/3.webp";
+
+
 // Import design images
 
 import square4x4Image from "@/assets/designs/square-4x4.webp";
@@ -111,122 +116,119 @@ const exposeAggregateDesigns: Design[] = [
 ];
 
 const projectGalleries: Record<string, string[]> = {
-  "Square 1'×1'": [
-    "/APS/images/projects/square-1x1/1.webp",
-    "/APS/images/projects/square-1x1/2.webp",
-    "/APS/images/projects/square-1x1/3.webp",
-  ],
+  "Square 1'×1'": [sq11_1, sq11_2, sq11_3],
+
   "Square 4'×4'": [
-    "/APS/images/projects/square-4x4/1.webp",
-    "/APS/images/projects/square-4x4/2.webp",
-    "/APS/images/projects/square-4x4/3.webp",
+    "/images/projects/square-4x4/1.webp",
+    "/images/projects/square-4x4/2.webp",
+    "/images/projects/square-4x4/3.webp",
   ],
   "Texture": [
-    "/APS/images/projects/texture/1.webp",
-    "/APS/images/projects/texture/2.webp",
+    "/images/projects/texture/1.webp",
+    "/images/projects/texture/2.webp",
   ],
   "Vertical": [
-    "/APS/images/projects/vertical/1.webp",
-    "/APS/images/projects/vertical/2.webp",
+    "/images/projects/vertical/1.webp",
+    "/images/projects/vertical/2.webp",
   ],
   "Tree Grating": [
-    "/APS/images/projects/tree-grating/1.webp",
-    "/APS/images/projects/tree-grating/2.webp",
+    "/images/projects/tree-grating/1.webp",
+    "/images/projects/tree-grating/2.webp",
   ],
   "Royal Ashlar": [
-    "/APS/images/projects/royal-ashlar/1.webp",
-    "/APS/images/projects/royal-ashlar/2.webp",
-    "/APS/images/projects/royal-ashlar/3.webp",
+    "/images/projects/royal-ashlar/1.webp",
+    "/images/projects/royal-ashlar/2.webp",
+    "/images/projects/royal-ashlar/3.webp",
   ],
   "Wooden": [
-    "/APS/images/projects/wooden/1.webp",
-    "/APS/images/projects/wooden/2.webp",
+    "/images/projects/wooden/1.webp",
+    "/images/projects/wooden/2.webp",
   ],
   "Ashlar English": [
-    "/APS/images/projects/ashlar-english/1.webp",
-    "/APS/images/projects/ashlar-english/2.webp",
-    "/APS/images/projects/ashlar-english/3.webp",
+    "/images/projects/ashlar-english/1.webp",
+    "/images/projects/ashlar-english/2.webp",
+    "/images/projects/ashlar-english/3.webp",
   ],
   "Random Stone": [
-    "/APS/images/projects/big-random-stone/1.webp",
-    "/APS/images/projects/big-random-stone/2.webp",
-    "/APS/images/projects/big-random-stone/3.webp",
+    "/images/projects/big-random-stone/1.webp",
+    "/images/projects/big-random-stone/2.webp",
+    "/images/projects/big-random-stone/3.webp",
   ],
   "European Fan": [
-    "/APS/images/projects/european-fan/1.webp",
-    "/APS/images/projects/european-fan/2.webp",
-    "/APS/images/projects/european-fan/3.webp",
+    "/images/projects/european-fan/1.webp",
+    "/images/projects/european-fan/2.webp",
+    "/images/projects/european-fan/3.webp",
   ],
   "Footpath": [
-    "/APS/images/projects/footpath/1.webp",
-    "/APS/images/projects/footpath/2.webp",
-    "/APS/images/projects/footpath/3.webp",
+    "/images/projects/footpath/1.webp",
+    "/images/projects/footpath/2.webp",
+    "/images/projects/footpath/3.webp",
   ],
   "Game Stamp": [
-    "/APS/images/projects/game-stamp/1.webp",
-    "/APS/images/projects/game-stamp/2.webp",
-    "/APS/images/projects/game-stamp/3.webp",
-    "/APS/images/projects/game-stamp/4.webp",
-    "/APS/images/projects/game-stamp/5.webp",
+    "/images/projects/game-stamp/1.webp",
+    "/images/projects/game-stamp/2.webp",
+    "/images/projects/game-stamp/3.webp",
+    "/images/projects/game-stamp/4.webp",
+    "/images/projects/game-stamp/5.webp",
   ],
   "Running Bond": [
-    "/APS/images/projects/running-bond/1.webp",
-    "/APS/images/projects/running-bond/2.webp",
+    "/images/projects/running-bond/1.webp",
+    "/images/projects/running-bond/2.webp",
   ],
   "Leaf": [
-    "/APS/images/projects/leaf/1.webp",
-    "/APS/images/projects/leaf/2.webp",
-    "/APS/images/projects/leaf/3.webp",
+    "/images/projects/leaf/1.webp",
+    "/images/projects/leaf/2.webp",
+    "/images/projects/leaf/3.webp",
   ],
   "Circle": [
-    "/APS/images/projects/circle/1.webp",
-    "/APS/images/projects/circle/2.webp",
-    "/APS/images/projects/circle/3.webp",
-    "/APS/images/projects/circle/4.webp",
+    "/images/projects/circle/1.webp",
+    "/images/projects/circle/2.webp",
+    "/images/projects/circle/3.webp",
+    "/images/projects/circle/4.webp",
   ],
   "Compass": [
-    "/APS/images/projects/compass/1.webp",
-    "/APS/images/projects/compass/2.webp",
-    "/APS/images/projects/compass/3.webp",
+    "/images/projects/compass/1.webp",
+    "/images/projects/compass/2.webp",
+    "/images/projects/compass/3.webp",
   ],
   "Cycle Track": [
-    "/APS/images/projects/cycle-track/1.webp",
-    "/APS/images/projects/cycle-track/2.webp",
-    "/APS/images/projects/cycle-track/3.webp",
+    "/images/projects/cycle-track/1.webp",
+    "/images/projects/cycle-track/2.webp",
+    "/images/projects/cycle-track/3.webp",
   ],
   "Garden Stone": [
-    "/APS/images/projects/garden-stone/1.webp",
-    "/APS/images/projects/garden-stone/2.webp",
-    "/APS/images/projects/garden-stone/3.webp",
+    "/images/projects/garden-stone/1.webp",
+    "/images/projects/garden-stone/2.webp",
+    "/images/projects/garden-stone/3.webp",
   ],
   "Grove Filling": [
-    "/APS/images/projects/groove-filling/1.webp",
-    "/APS/images/projects/groove-filling/2.webp",
-    "/APS/images/projects/groove-filling/3.webp",
+    "/images/projects/groove-filling/1.webp",
+    "/images/projects/groove-filling/2.webp",
+    "/images/projects/groove-filling/3.webp",
   ],
   "Spiral": [
-    "/APS/images/projects/spiral/1.webp",
-    "/APS/images/projects/spiral/2.webp",
+    "/images/projects/spiral/1.webp",
+    "/images/projects/spiral/2.webp",
   ],
   "London Cobble": [
-    "/APS/images/projects/london-cobble/1.webp",
-    "/APS/images/projects/london-cobble/2.webp",
-    "/APS/images/projects/london-cobble/3.webp",
+    "/images/projects/london-cobble/1.webp",
+    "/images/projects/london-cobble/2.webp",
+    "/images/projects/london-cobble/3.webp",
   ],
   "Herring Bone": [
-    "/APS/images/projects/herring-bone/1.webp",
-    "/APS/images/projects/herring-bone/2.webp",
+    "/images/projects/herring-bone/1.webp",
+    "/images/projects/herring-bone/2.webp",
   ],
   "Borders": [
-    "/APS/images/projects/borders/1.webp",
-    "/APS/images/projects/borders/2.webp",
-    "/APS/images/projects/borders/3.webp",
-    "/APS/images/projects/borders/4.webp",
+    "/images/projects/borders/1.webp",
+    "/images/projects/borders/2.webp",
+    "/images/projects/borders/3.webp",
+    "/images/projects/borders/4.webp",
   ],
   "Pebbles": [
-    "/APS/images/projects/pebbles/1.webp",
-    "/APS/images/projects/pebbles/2.webp",
-    "/APS/images/projects/pebbles/3.webp",
+    "/images/projects/pebbles/1.webp",
+    "/images/projects/pebbles/2.webp",
+    "/images/projects/pebbles/3.webp",
   ],
 };
 
