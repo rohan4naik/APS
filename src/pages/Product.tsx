@@ -35,10 +35,10 @@ const Product = () => {
               <TabsContent value="stamping-material" className="space-y-8 animate-in fade-in-50 duration-500">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
-                    { name: "Colour Hardener", image: "images/colour-hardener.webp" },
-                    { name: "Release Agent", image: "images/release-agent.webp" },
-                    { name: "Lacquer", image: "images/lacquer.webp" },
-                    { name: "Chipping Stone", image: "images/chipping-stone.webp" },
+                    { name: "Colour Hardener", image: "/images/colour-hardener.webp" },
+                    { name: "Release Agent", image: "/images/release-agent.webp" },
+                    { name: "Lacquer", image: "/images/lacquer.webp" },
+                    { name: "Chipping Stone", image: "/images/chipping-stone.webp" },
                   ].map((product) => (
                     <div key={product.name} className="flex flex-col bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-border group">
                       <div className="aspect-square bg-muted/30 overflow-hidden relative skeleton-loading">
