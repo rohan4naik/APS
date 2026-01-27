@@ -31,9 +31,9 @@ const epoxyImages = [
 ];
 
 const materialImages = [
-  { name: "Colour Hardener", image: "/images/designs/colour-hardener.webp" },
-  { name: "Release Agent", image: "/images/designs/release-agent.webp" },
-  { name: "Lacquer", image: "/images/designs/lacquer.webp" },
+  { name: "Colour Hardener", image: "images/colour-hardener.webp" },
+  { name: "Release Agent", image: "images/release-agent.webp" },
+  { name: "Lacquer", image: "images/lacquer.webp" },
 ];
 
 const badges = [
