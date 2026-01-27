@@ -11,34 +11,31 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 
-import sq11_1 from "@/assets/projects/square-1x1/1.webp";
-import sq11_2 from "@/assets/projects/square-1x1/2.webp";
-import sq11_3 from "@/assets/projects/square-1x1/3.webp";
 
 
 // Import design images
 
-import square4x4Image from "@/assets/designs/square-4x4.webp";
-import textureImage from "@/assets/designs/texture.webp";
-import treeGratingImage from "@/assets/designs/tree-grating.webp";
-import verticalImage from "@/assets/designs/vertical.webp";
-import woodenImage from "@/assets/designs/wooden.webp";
-import ashlarEnglishImage from "@/assets/designs/ashlar-english.webp";
-import bigRandomStoneImage from "@/assets/designs/big-random-stone.webp";
+// import square4x4Image from "@/assets/designs/square-4x4.webp";
+// import textureImage from "@/assets/designs/texture.webp";
+// import treeGratingImage from "@/assets/designs/tree-grating.webp";
+// import verticalImage from "@/assets/designs/vertical.webp";
+// import woodenImage from "@/assets/designs/wooden.webp";
+// import ashlarEnglishImage from "@/assets/designs/ashlar-english.webp";
+// import bigRandomStoneImage from "@/assets/designs/big-random-stone.webp";
 
-import europeanFanImage from "@/assets/designs/european-fan.webp";
-import footpathImage from "@/assets/designs/footpath.webp";
-import gameStampImage from "@/assets/designs/game-stamp.webp";
-import leafImage from "@/assets/designs/leaf.webp";
-import royalAshlarImage from "@/assets/designs/royal-ashlar.webp";
-import runningBondImage from "@/assets/designs/running-bond.webp";
-import circleImage from "@/assets/designs/circle.webp";
+// import europeanFanImage from "@/assets/designs/european-fan.webp";
+// import footpathImage from "@/assets/designs/footpath.webp";
+// import gameStampImage from "@/assets/designs/game-stamp.webp";
+// import leafImage from "@/assets/designs/leaf.webp";
+// import royalAshlarImage from "@/assets/designs/royal-ashlar.webp";
+// import runningBondImage from "@/assets/designs/running-bond.webp";
+// import circleImage from "@/assets/designs/circle.webp";
 
 
-import cycleTrackImage from "@/assets/designs/cycle-track.webp";
-import gardenStoneImage from "@/assets/designs/garden-stone.webp";
+// import cycleTrackImage from "@/assets/designs/cycle-track.webp";
+// import gardenStoneImage from "@/assets/designs/garden-stone.webp";
 
-import spiralImage from "@/assets/designs/spiral.webp";
+// import spiralImage from "@/assets/designs/spiral.webp";
 
 
 
@@ -116,8 +113,11 @@ const exposeAggregateDesigns: Design[] = [
 ];
 
 const projectGalleries: Record<string, string[]> = {
-  "Square 1'×1'": [sq11_1, sq11_2, sq11_3],
-
+  "Square 1'×1'": [
+    "/images/projects/square-1x1/1.webp",
+    "/images/projects/square-1x1/2.webp",
+    "/images/projects/square-1x1/3.webp",
+  ],
   "Square 4'×4'": [
     "/images/projects/square-4x4/1.webp",
     "/images/projects/square-4x4/2.webp",
